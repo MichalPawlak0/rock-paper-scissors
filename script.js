@@ -1,3 +1,5 @@
+const ROUND_NR = 5;
+
 function getComputerChoice(){
     let randNum = Math.floor(Math.random()*3);
     switch (randNum) {
@@ -26,4 +28,10 @@ function game(){
     let compChoice = getComputerChoice();
     let playerChoice = prompt("Rock, Paper or Scissors?");
     console.log(playRound(playerChoice, compChoice));
+}
+
+let gamesPlayed=0;
+while (gamesPlayed<ROUND_NR) {
+    game();
+    gamesPlayed++;
 }
