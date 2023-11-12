@@ -41,10 +41,6 @@ function playRound(event){
 
 }
 
-// function game(){
-//     let playerChoice = prompt("Rock, Paper or Scissors?");
-//     console.log(playRound(playerChoice, compChoice));
-// }
 const divEl=document.querySelector(".result-text")
 const scoreEl=document.querySelector(".running-score")
 const winnerEl=document.querySelector(".winner")
@@ -64,12 +60,3 @@ document.body.insertBefore(button3,divEl);
 button1.addEventListener("click",playRound)
 button2.addEventListener("click",playRound)
 button3.addEventListener("click",playRound)
-
-// const divEl=document.querySelector("div");
-// divEl
-
-// let gamesPlayed=0;
-// while (gamesPlayed<ROUND_NR) {
-    // game();
-//     gamesPlayed++;
-// }
